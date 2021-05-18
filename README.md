@@ -20,7 +20,6 @@ locals {
 }
 
 # data block that reads from the datasource (transport zone)
-
 data "nsxt_policy_transport_zone" "overlay_tz" {
   display_name                       = local.overlay_target_transport_zone_name
 }
