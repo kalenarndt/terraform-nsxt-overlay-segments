@@ -46,7 +46,7 @@ Ensure that you modify the nsxt-config.yaml file to match the objects that you w
 Place the nsxt-config.yaml file where your main.tf file is in your deployment or modify the usage example for the path to your yaml
 
 ```yaml
-# overlay segments section. Requires connectivity path to be defined based on the sub object under tier1_gateways "eg. t1-ops" to be connected. 
+# overlay segments section. 
 overlay_segments:
   seg-app01:
     segment_name: seg-app01
