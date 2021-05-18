@@ -26,7 +26,7 @@ data "nsxt_policy_transport_zone" "overlay_tz" {
 
 # module that deploys overlay segments
 module "overlay_segments" {
-  source                             = "https://github.com/kalenarndt/terraform-nsxt-overlay-segments"
+  source                             = "github.com/kalenarndt/terraform-nsxt-overlay-segments"
   overlay_segments                   = local.overlay_segments
   tier1_gateway_path                 = local.tier1_gateway_paths[local.target_tier1_gateway_name]
   transport_zone_path                = local.overlay_tz_path
